@@ -12,10 +12,9 @@ CastKin is designed to extract the angular velocity of head casting in freely mo
 2. [Contents](#contents)
 3. [Requirements](#requirements)
     - [Installation](#installation)
-4. [Getting Started](#getting-started)
-5. [Documentation](#documentation)
-6. [Data Availability](#data-availability)
-7. [References](#references)
+4. [Documentation](#documentation)
+5. [Data Availability](#data-availability)
+6. [References](#references)
 
 ## Requirements
 We provide instructions for installing CastKin on Windows/MacOS/Linux below. While a GPU is **highly recommended** to use [DeepLabCut](https://deeplabcut.github.io/DeepLabCut/README.html), it is not required for use with CastKin.
