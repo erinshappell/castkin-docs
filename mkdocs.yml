@@ -1,0 +1,11 @@
+site_name: CastKin
+site_url: https://castkin.github.io
+nav:
+  - Getting Started: index.md
+  - castkin.castkin: castkin.md
+
+theme: readthedocs
+
+plugins:
+  - search
+  - mkdocstrings
