@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" /><link rel="canonical" href="https://pumpkin.github.io/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>PumpKin</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="assets/_mkdocstrings.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Getting Started";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> PumpKin
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Getting Started</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#features">Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation-windows-only">Installation (Windows only)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-follow-the-directions-on-ez-frcnncom-to-train-a-model-to-track-the-pharyngeal-bulb-and-inference-your-videos">Step 1: Follow the directions on ez-frcnn.com to train a model to track the pharyngeal bulb and inference your videos.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-use-the-croproiipynb-jupyter-notebook-to-crop-each-of-your-videos-to-a-250x250p-area-centered-on-the-pharyngeal-bulb">Step 2: Use the cropROI.ipynb Jupyter Notebook to crop each of your videos to a 250x250p area centered on the pharyngeal bulb.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-follow-the-directions-on-ez-frcnncom-to-train-a-model-to-track-the-grinder-and-inference-your-videos">Step 3: Follow the directions on ez-frcnn.com to train a model to track the grinder and inference your videos.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-use-the-savecomsipynb-jupyter-notebook-to-calculate-and-save-the-center-of-mass-com-of-the-tracked-grinders-for-each-of-your-videos">Step 4: Use the saveCoMs.ipynb Jupyter Notebook to calculate and save the center of mass (CoM) of the tracked grinders for each of your videos.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-5-use-the-pumpkinipynb-jupyter-notebook-to-run-pumpkin-on-your-videos-and-obtain-pumping-rate-estimates">Step 5: Use the pumpkin.ipynb Jupyter Notebook to run PumpKin on your videos and obtain pumping rate estimates.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="annotation/">pumpkin.annotation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="characterize/">pumpkin.characterize</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="image_augs/">pumpkin.image_augs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="inferencing/">pumpkin.inferencing</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="plotting/">pumpkin.plotting</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="pumpkin/">pumpkin.pumpkin</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="training/">pumpkin.training</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="utils/">pumpkin.utils</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">PumpKin</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Getting Started</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="documentation-for-pumpkin-a-machine-learning-package-for-automatically-tracking-pharyngeal-pumping-kinematics-in-freely-moving-c-elegans">Documentation for PumpKin: A machine learning package for automatically tracking pharyngeal pumping kinematics in freely moving <em>C. elegans</em></h1>
+<p>PumpKin is designed to automatically track the pharyngeal pumping rate in individual freely moving <em>C. elegans</em>, but may be adapted to track the motion of structures in other organisms as well! This package is built using EZ-FRCNN: a user-friendly implementation of the popular Faster Region-based Convolutional Neural Network (Faster R-CNN) originally developed by <a href="https://ieeexplore.ieee.org/document/7485869">Ren et al</a>. To get started, visit <a href="www.ezfrcnn.com">www.ezfrcnn.com</a> or continue reading below.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Easy installation and environment setup for all OSes</li>
+<li>Jupyter Notebook-based for ease-of-use</li>
+<li>Simple in-house annotation tools</li>
+<li><strong>Fast FRCNN training</strong>: around 1 hour on a single GPU for a standard dataset</li>
+<li><strong>Fast FRCNN inferencing</strong>: around 15 FPS on a single GPU</li>
+<li>Detailed documentation and tutorials for use</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<p>We provide instructions for installing PumpKin (with EZ-FRCNN) on Windows or MacOS below. While a GPU is <strong>highly recommended</strong> to use PumpKin and EZ-FRCNN, it is not required.</p>
+<h2 id="installation-windows-only">Installation (Windows only)</h2>
+<ol>
+<li>Install <a href="https://docs.docker.com/desktop/setup/install/windows-install/">Docker for Windows</a>.</li>
+<li>Launch Docker Desktop.</li>
+<li><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/lu-lab/PumpKin">Download</a> or clone <a href="https://github.com/lu-lab/PumpKin">this repository</a>.</li>
+<li>Extract the contents of the ZIP file downloaded in the last step to a folder of your choice (SKIP if you used <code>git clone</code>).</li>
+<li>Open the EZ-FRCNN folder and double-click <code>ez-frcnn.bat</code> to launch EZ-FRCNN. OR for a <strong>more user-friendly experience</strong>, double-click <code>ez-frcnnPane.bat</code> to launch the GUI.</li>
+</ol>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="step-1-follow-the-directions-on-ez-frcnncom-to-train-a-model-to-track-the-pharyngeal-bulb-and-inference-your-videos">Step 1: Follow the directions on <a href="www.ez-frcnn.com">ez-frcnn.com</a> to train a model to track the <em>pharyngeal bulb</em> and inference your videos.</h3>
+<ol>
+<li>Be sure to use high-quality (at minimum 1080p) images so that the pharyngeal bulb (and grinder) are clearly labelable!</li>
+<li>We recommend using 100-200 images for training, depending on the variation of your recordings. You can also train separate models for different recording conditions if one model is struggling to generalize.</li>
+<li>We provide an example model at <code>./models/bulb_tracking_EXAMPLE.pth</code>, but we <strong>highly recommend</strong> either training your own model or retraining the example model as a starting point.</li>
+</ol>
+<h3 id="step-2-use-the-croproiipynb-jupyter-notebook-to-crop-each-of-your-videos-to-a-250x250p-area-centered-on-the-pharyngeal-bulb">Step 2: Use the <code>cropROI.ipynb</code> Jupyter Notebook to crop each of your videos to a 250x250p area centered on the pharyngeal bulb.</h3>
+<ol>
+<li>If using a different folder structure, update <code>VID_DIR</code> and <code>OUT_DIR</code> accordingly.</li>
+<li>Change <code>video_type</code> to the suffix that matches your videos (e.g., <code>.wmv</code>, <code>.mp4</code>, <code>.avi</code>, etc.).</li>
+<li>This script is designed to locate all videos and crop them, but if you only wish to crop a selection of them, edit <code>videos</code> to be a list of the specific videos you would like cropped:</li>
+</ol>
+<pre><code class="language-py">videos = ['example_video_name_1', 'example_video_name_2', ...]
+</code></pre>
+<ol>
+<li>All cropped videos are saved in <code>./videos/cropped</code> by default and use the same suffix as the original videos.</li>
+</ol>
+<h3 id="step-3-follow-the-directions-on-ez-frcnncom-to-train-a-model-to-track-the-grinder-and-inference-your-videos">Step 3: Follow the directions on <a href="www.ez-frcnn.com">ez-frcnn.com</a> to train a model to track the <em>grinder</em> and inference your videos.</h3>
+<ol>
+<li>We recommend using 100-150 images for training, depending on the variation of your recordings. You can also train separate models for different recording conditions if one model is struggling to generalize.</li>
+<li>We provide an example model at <code>./models/grinder_tracking_EXAMPLE.pth</code>, but we <strong>highly recommend</strong> either training your own model or retraining the example model as a starting point.</li>
+</ol>
+<h3 id="step-4-use-the-savecomsipynb-jupyter-notebook-to-calculate-and-save-the-center-of-mass-com-of-the-tracked-grinders-for-each-of-your-videos">Step 4: Use the <code>saveCoMs.ipynb</code> Jupyter Notebook to calculate and save the center of mass (CoM) of the tracked grinders for each of your videos.</h3>
+<p>These are used in PumpKin to sample a uniform number of points in the grinder for motion tracking.</p>
+<ol>
+<li>If using a different folder structure, update <code>VID_DIR</code> and <code>OUT_DIR</code> accordingly.</li>
+<li>Change <code>video_type</code> to the suffix that matches your videos (e.g., <code>.wmv</code>, <code>.mp4</code>, <code>.avi</code>, etc.).</li>
+<li>This script is designed to locate all videos and calculate the CoM, but if you only wish to track a selection of them, edit <code>videos</code> to be a list of the specific videos you would like tracked.</li>
+<li>All CoMs are saved in <code>./outputs/coms</code> in CSV format by default.</li>
+</ol>
+<h3 id="step-5-use-the-pumpkinipynb-jupyter-notebook-to-run-pumpkin-on-your-videos-and-obtain-pumping-rate-estimates">Step 5: Use the <code>pumpkin.ipynb</code> Jupyter Notebook to run PumpKin on your videos and obtain pumping rate estimates.</h3>
+<ol>
+<li>If using a different folder structure, update <code>VID_DIR</code> and <code>OUT_DIR</code> accordingly.</li>
+<li>Change <code>video_type</code> to the suffix that matches your videos (e.g., <code>.wmv</code>, <code>.mp4</code>, <code>.avi</code>, etc.).</li>
+<li>This script is designed to locate all videos and process them, but if you only wish to process a selection of them, edit <code>videos</code> to be a list of the specific videos you would like processed.</li>
+<li>PumpKin saves the detected pump times and continuous pumping rate estimate to <code>./outputs/pumpkin</code> in CSV format by default.</li>
+</ol>
+<h2 id="references">References</h2>
+<p>EZ-FRCNN is an implementation of Faster R-CNN, an algorithm developed by <a href="https://ieeexplore.ieee.org/document/7485869">Ren et al</a>. </p>
+<p>Motion compensation and optical flow code is adapted from code written by <a href="https://github.com/itberrios/CV_projects/tree/main">Isaac Berrios</a>.</p>
+<p>Written by Erin Shappell and Jacob Wheelock for Lu Lab, 2025.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="annotation/" class="btn btn-neutral float-right" title="pumpkin.annotation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="annotation/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-06-05 19:30:14.113598+00:00
+-->
