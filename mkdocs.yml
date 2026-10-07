@@ -1,5 +1,5 @@
 site_name: CastKin
-site_url: https://castkin.github.io
+site_url: https://castkin-docs.github.io
 nav:
   - Getting Started: index.md
   - castkin.castkin: castkin.md

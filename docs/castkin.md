@@ -1,6 +1,4 @@
 # castkin.castkin
-## CastKin-specific functions
-
 ---
 ``` py
 def remove_nans(arr):

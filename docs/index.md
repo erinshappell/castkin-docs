@@ -1,6 +1,6 @@
 ---
-# CastKin: an automated method for tracking head casting kinematics in freely moving _C. elegans_
-
+# CastKin: An automated method for tracking head casting kinematics in freely moving _C. elegans_
+CastKin is designed to extract the angular velocity of head casting in freely moving _C. elegans_. This package is designed to work with head centerlines obtained by [DeepLabCut](https://deeplabcut.github.io/DeepLabCut/README.html), but can be adapted for use with centerlines obtained from other popular methods (e.g., skeletonization, other pose trackers) as well! To get started, continue reading below.
 
 ## Features
 - Jupyter Notebook-based for ease-of-use

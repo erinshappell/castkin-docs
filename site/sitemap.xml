@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://pumpkin.github.io/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <loc>https://castkin-docs.github.io/</loc>
+         <lastmod>2026-10-07</lastmod>
     </url>
     <url>
-         <loc>https://pumpkin.github.io/annotation/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/characterize/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/image_augs/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/inferencing/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/plotting/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/pumpkin/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/training/</loc>
-         <lastmod>2025-06-05</lastmod>
-    </url>
-    <url>
-         <loc>https://pumpkin.github.io/utils/</loc>
-         <lastmod>2025-06-05</lastmod>
+         <loc>https://castkin-docs.github.io/castkin/</loc>
+         <lastmod>2026-10-07</lastmod>
     </url>
 </urlset>
